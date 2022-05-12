@@ -13,9 +13,13 @@ if (
   );
 }
 /* @remove-on-es-build-end */
+export { default as AutoBreadcrumb } from "./auto-breadcrumb";
+
 export { default as AutonContainer } from "./auto-container";
 
 export { default as IconFont } from "./iconfont";
+
+export { default as CustomToIframe } from "./iframe";
 
 export { default as IFrameSimple } from "./iframe/simple";
 
@@ -26,6 +30,8 @@ export { default as MonacoEditor } from "./monaco-editor";
 export { default as Scrollbar } from "./scrollbar";
 
 export { default as SketchRuler } from "./sketch-ruler";
+
+export { default as Typing } from "./typing";
 
 export { default as Vcharts } from "./vcharts";
 

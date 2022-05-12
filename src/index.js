@@ -23,27 +23,11 @@
  * * * * * * * * * * * * * * * * * * * * * * * **/
 
 /**
- *
- *  ┌─────────────────────────────────────────────────────────────┐
- *  │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│
- *  ││Esc│!1 │@2 │#3 │$4 │%5 │^6 │&7 │*8 │(9 │)0 │_- │+= │|\ │`~ ││
- *  │├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤│
- *  ││ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{[ │}] │ BS  ││
- *  │├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤│
- *  ││ Ctrl │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│" '│ Enter  ││
- *  │├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┬───┤│
- *  ││ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│Shift │Fn ││
- *  │└─────┬──┴┬──┴──┬┴───┴───┴───┴───┴───┴──┬┴───┴┬──┴┬─────┴───┘│
- *  │      │Fn │ Alt │         Space         │ Alt │Win│   HHKB   │
- *  │      └───┴─────┴───────────────────────┴─────┴───┘          │
- *  └─────────────────────────────────────────────────────────────┘
- *
  * @author Aaron
  * create in 2020-05-11 by Aaron
  * E-mail: chao_code520@163.com
- * GitHub: https://github.com/Aaron52077
+ * GitHub: https://github.com/Aaron52077/react-visual-data
  */
-
 import "./polyfills.js";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -58,8 +42,10 @@ const UI_ROOT_ID = "datav-ui-root";
  * Currently MockJs will be used in the production environment,
  * please remove it before going online! ! !
  */
-if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "production") {
-  require("./__mocks__");
+import { mockXHR } from "./__mocks__";
+
+if (process.env.REACT_APP_USE_MOCK) {
+  mockXHR();
   console.log("current mode is development, mock is enabled");
 }
 

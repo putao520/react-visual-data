@@ -71,10 +71,9 @@ module.exports = {
     addWebpackAlias({
       "@": resolve("src"),
       "~components": resolve("src/components"),
-      "~materials": resolve("src/materials"),
-      "~renderer": resolve("src/library/renderer"),
-      "~common": resolve("src/library/common"),
-      "~utils": resolve("src/library/utils")
+      "~packages": resolve("src/packages"),
+      "~hooks": resolve("src/hooks"),
+      "~utils": resolve("src/utils")
     }),
     disableEsLint(),
     appBuild()

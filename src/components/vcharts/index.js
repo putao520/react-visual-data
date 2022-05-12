@@ -1,6 +1,9 @@
 import echarts from "echarts";
 import VEchartsCore from "./core";
-import "~materials/vcharts/theme";
+import { DarkTheme } from "./theme";
+
+// register theme object
+echarts.registerTheme("dark", DarkTheme);
 
 // export the Component the echarts Object.
 export default class VEcharts extends VEchartsCore {

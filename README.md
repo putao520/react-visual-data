@@ -1,30 +1,24 @@
-# react-visual-data
+# data-visual-platform
 
 #### 介绍
 
-🎉 基于 reactjs 开发的可视化项目实战
+🎉 基于 reactjs 开发的可视化大屏设计器项目 https://wuli-admin.gitee.io/react-visual-data/#/dashboard
+ vue3版本 https://wuli-admin.gitee.io/element-design
 
-## 亮点
+#### 参与贡献
 
-- <a href="https://wuli-admin.gitee.io/react-wuli-admin/#/workspace/fullscreen" target="_blank">大屏设计器</a>：自由拖拽大屏
-- <a href="https://wuli-admin.gitee.io/react-wuli-admin/#/workspace/report" target="_blank">报表设计器</a>：自适应排列布局
-- <a href="https://wuli-admin.gitee.io/react-wuli-admin/#/form-render" target="_blank">动态表单</a>：schema 设计模式
-- <a href="https://wuli-admin.gitee.io/element-design/#/" target="_blank">vue版本尝鲜</a>：vue版本尝鲜
+此项目为作者闲暇时间`学习计划`的一部分，项目中可能会出现实验性的功能，所以在完成第一个可用版本之前只接受 `fixbug PR`，不接受 `feature PR`。还望大家理解。
 
-[issues](https://github.com/Aaron52077/react-visual-data/issues)，欢迎提交～
-
-## 调试
-
-```shell
-> git clone https://github.com/Aaron52077/react-visual-data.git
-> npm i
-> npm start
-```
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
 
 **目录结构：**
 
 ```
 ├── config-overrides.js
+├── yarn-lock.json
 ├── package.json
 ├── public
 │   ├── config.js
@@ -34,19 +28,17 @@
 │   └── static
 ├── README.md
 ├── src
+│   ├── __mocks__
 │   ├── api
-│   ├── App.js
 │   ├── components
-│   ├── index.js
-│   ├── library
-│   ├── materials
+│   ├── form-render
+│   ├── hooks
+│   ├── layouts
+│   ├── packages
 │   ├── pages
-│   ├── polyfills.js
+│   ├── router
+│   ├── store
 │   ├── styles
-│   └── __mocks__
+│   ├── utils
+│   └── index.js // main入口
 ```
-
-## 协议
-
-- 遵循 MIT 协议
-- 请自由地享受和参与开源

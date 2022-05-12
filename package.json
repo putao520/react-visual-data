@@ -1,8 +1,16 @@
 {
-  "name": "data-visual-platform",
-  "version": "2.0.0",
+  "name": "react-visual-data",
+  "version": "1.1.0",
   "private": true,
   "homepage": ".",
+  "author": "Aaron52077",
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired --max-old-space-size=2048 build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -17,30 +25,35 @@
     "rc-color-picker": "^1.2.6",
     "react": "^16.13.1",
     "react-custom-scrollbars": "^4.2.1",
-    "react-dnd": "^14.0.2",
-    "react-dnd-html5-backend": "^14.0.0",
     "react-dom": "^16.13.1",
-    "react-grid-layout": "^1.0.0",
     "react-redux": "^7.2.0",
-    "react-rnd": "^10.2.4",
+    "react-rnd": "^10.3.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "react-sortable-hoc": "^1.11.0",
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",
     "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.3.0",
-    "size-sensor": "^1.0.1",
-    "xlsx": "^0.16.9"
+    "redux-thunk": "^2.3.0"
   },
-  "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired --max-old-space-size=2048 build",
-    "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@monaco-editor/react": "^3.3.1",
+    "babel-plugin-import": "^1.13.3",
+    "customize-cra": "^1.0.0-alpha.0",
+    "husky": "^6.0.0",
+    "less": "^3.11.1",
+    "less-loader": "^7.2.1",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-app-rewired": "^2.1.6",
+    "styled-components": "^5.1.1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,less}": [
+      "prettier --write"
+    ]
   },
   "browserslist": {
     "production": [
@@ -55,15 +68,5 @@
       "last 1 safari version",
       "ie 11"
     ]
-  },
-  "devDependencies": {
-    "@monaco-editor/react": "^3.3.1",
-    "babel-plugin-import": "^1.13.3",
-    "customize-cra": "^1.0.0-alpha.0",
-    "less": "^3.11.1",
-    "less-loader": "^7.2.1",
-    "react-app-polyfill": "^1.0.6",
-    "react-app-rewired": "^2.1.6",
-    "styled-components": "^5.1.1"
   }
 }
